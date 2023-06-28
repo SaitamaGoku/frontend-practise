@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Abstract Help Page</title>
+        <link rel="stylesheet" href="abstract.css">
+    </head>
+    <body>
+        <div class="header">
+            <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABAhJREFUaEPtmYFtFTEMht0JKBMAExQmACYAJqBMAEwATABMAJ0AmACYoDABMAGwAfrQGfn57MTJnYQqNVLV6r27+P/t346dHskFX0cXHL9cEvjfEdw7AtdF5LaI8PtYRG4uBH+JyJfl708i8nkv4nsQAOQ9EblvAPfwQQgi70XkrPdw6/stBPDyMxE53QJARL6LyPNZIjMEkMbLHYB73hB5tESm7JNRAnj9XUMqX0Xk7aJ3JKKL9/QHqSG5bD0RkddVBiME7izgiYBdP0Tk1aJnvFhZkPnWeBAnPBURcqW5qgRI1PNgJzyFx2YWINmXRCaX/OJ7JLWZAN4CvPX87yUHML5lsSdeJokjEkSB6KarFwEMfHSaR+fouCoXNY4joneoYm8aGO+2ErtHgDA+NJvjecI+Ch5HEEUS28qiBx7T2LqREWwRiBLtwaLZEdnYKBI9igGyycC/COQEaZy5Wi0C3vuzCYvXaS8q4BWoz4k0ChkBX3UolURkZrEXiUjetDyv4KO8w24YhYwABh8btIQVr2xdmWw8OKIP4SvG4IflswMMGQESTjtJXiCJqomLB9G5L7FV8LZq2cOO6F31HowI+ORFu5ZMKwo2/DbhR8GrDVrwE2NwVVIjAt5Y9zBZDIxWG695wPqTtyvliICvAM2DxHgHzdLojVQbSzo6Y3RPNbPKxYiAZ10lgBEMUjYr1YbntcQCnrzRqU0BQ/CncRLDz8H8ERHQTfW9EQL6TlXzWmJpCD149vLlnFEUov9WhUBWgfAOkiFHrPEq+EpJBiy9mK4SAX8CU7p8X261a+tzD3xWYjMynkApB3wS+/7HttezCVvtqXYhEPVAOoz0GrOoPbCkezIiN5i/da3aiSgHPGv0fSuwpMNITzZanXyJ7YHn+25HkLUSaN72IVkiV8ArUFtiK+BLHUFGgD7G3hxAiM8qw0jau1dQm2d8LoYNZUYg8uxowkYltspBJzjbwocqaA00dJ/XjEX1QE82tsSu6naRge8GView7tMiEAElrNFcYGWjiTdSbSwv3//wXdrO94Z6H4XIgdEwQgugJbbo9L+PRVc4zVG2R8CXVA8mS1gtsaPg/bVlN4o9AgDwh4mC0pyYAeuJIRvuhvzlWfcKp0IAY74/4jNKqw7r0TBS9T4nbXQ9yeEZdagH+1YJ4BnA2ksuuxFkMFidm9E6e1Eo/G1HNhuEDqkS0JczOen3HHb8QISrGEuIuyEkAehsxh6+thwlAFASG0nZM6Iql9ZzVBtKdPdK3W4yQ0Dfx5MY3EqEQ4p9qvKbyoGW5yBCFSEytgFsvYNUkBqRnAJeOYlnZAEJnVn1X0rso/9uAix/bwK9l4RmCO7+zpYc2B3MzIaXBGa8tuc7fwBKoBhA7SHbbgAAAABJRU5ErkJggg=="/> -->
+            <div class="logo">
+            <img width="60vw" height="50vh" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAwNJREFUaEPtWe1RFEEQfR2BGoGSgUYgRiAZKBGIEYgRCBEIEYgRCBEgEYgRCBE861Gz1u587zmze1dF/9m6upmefv09PYYdJ9tx+fEIYG0LNrMAyRcA3gLYB/AUwEv3FcY7AD/d9xLAlZnp9wON9h4BEJ9hzwWAz2Z2m1LUfwEgKUHfARgfXGuUAZTWC3SOjszsNLZgIwBOY4PgArEEfTSzE/+g2QBIvgfwZeQeSwg/nLHnu9MsACS/AhCAtejUzOSu/6gKgPP1Hy4w1xJe5yr4J/FSBDBT+CsAyhzKMLcyN0k2RCyee7MsUOk25wCOY+muMQCY2UTpWQu4gJXfp+hGMTHO6f7CxgC+m9lBlQVcqvyVEV7ucmBmyudJagwgSKVJC5BUzv2QkCwIpmEdSVVjVWEF27gatwiFujTqAlfajxUpuc2+r3mSElbupm8PujGzgHfUAiSPAXxKSPHK93mSWqs9PSlq9RSAPwntn5vZpJAVwLYEdGdmz3yGAQDnCteJkyc+WFjbUviBV2D9GACVavU6PgUmJCmgvXw+poByFiKpSqpM4tNkM0nl42891JzhWa4DJHXheB1h8sbM9N8DLej7Y1HKvVCm8Pj+nwLa0yhBIMdiINp8+T0IyVSm6gmg3As1Lv3NwRSbuS0HcG9mk+4g5kJr+HatpaqCOJVGaw/pua4qjaYKWU/BanlXFTJV1lQrUXtQr3XlVsIVqZb32FZgggAW41Q3uo2BrBFj0LKnACzdpJWsdK+Zaez6GkujGq7m7sKlw3r8Hwy0hkPmtNM9BKvlGdyFcwC2rQ4cmtlZCml1M1erqsbrgiuszz8GQHOeJ40F2YRddPpRA2AbUmiV8NE6UBhobaLJuXs0Z9WLTHbilwviNdNoNmBjmkgVsiUbOhUpZZmT3GNedRYaFpKsAaEBr0gN4NzAl+Cav0rwKneptsAIhNxJ/YdGKIOACjBp7Gx8sBtyaaA7PLNq73PH67cePEbPrJe5kfycoCm+0MxhtsbaRwBraH185s5b4C/NpzJAIxd5TAAAAABJRU5ErkJggg=="/>
+            <p>Abstract | Help Center</p>
+            </div>
+            <div class="buttons">
+                <button class="btn-1">Submit a request</button>
+                <button class="btn-2">Sign In</button>
+            </div>
+        </div>
+        <div class="help">
+            <h1>How can we help?</h1>
+            <input type="search" name="Search" placeholder="Search">
+        </div>
+        <div class="facilities">
+            <div class="i1">
+                
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAsJJREFUaEPtmf2RTUEQxc9GgAjYDIgAESCCtRGQASJABIjAigARsBHsigARUL/ae8vUuHe6+07Pe/WqtqveXzvTfU5/39kjHbgcHTh+XRPYdwQzI3BT0n1JjyXdKX5wvCx+Z5K+SvqVQT6DAGBfSHoaBPRe0quJWPDqv+M9BPA4wJ9vtn518aWkt1sjspUA4D9LutsJfr7+XdLDLSS2EAA04CGxJudTagCMKHmEmoAEd9wSJQDoixXwP6Z0oEjLAv3jRnN17zgSiQiBVtpQjG9WDEcIwDWUThECAHxWefP3VMR0lFpoqaQb96KCQyhuU7wEaJWkTi2nkkrwROmjpAemZfsAqcT8aIqXACBPKk21lxhg74zitvCUf//gmS0eAnj1Z2WZgiU95mIFPJ7PlltWQXsILIErU6fVmXoJPZFEV1sVD4Gl9Ck9w0zIyPklkGYaeQh8mZa02QBDqpzA0TYZiQpLX9M5HgJ0H7rQLKVXUE4ERgkz4V5vCtUeLrsPi9zrUegnvU0neyIwMkU83LsJMExueywNOEO7LtP3PxOeCNRFPADnqsqUIqYPP9ol6sLWp+kTtWsOsFR5d/psnuZS50mh0a2yRZoPHFK4KwJc3lcnMh1sHpioL60T2elS6zPXCC54Cewjjcz0iRDg7C7ngdn/53B5I8B5Hq74YNmF1F963UU8K9jFUKu33abDIhFAEWv0t8EhcOX+lhSa74zcQM3BVTsvGoH5/oi2aq4NS5HfSgBdmfVA3tOqw0/uPQQgkREJ18Baq7teAuilJlj4bgSLm1c9Xu1cL3AjCaCbpxXA1I9fa3bxOsDNlzfLKRkRKG1AhHckfvU3BEXKt0X9em1hTJ0DXmNLU9s9Xb1GortQRC/Drv7vDV2LIZUq2SkEuNbmGpqyHqYjCLSeGtOjMIKAx3FpZ64JpLlyo6KDj8BfJ0V6MVv6gR4AAAAASUVORK5CYII="/>
+            </div>
+            <div class="c1">
+                <p class="content-1">Branches</p>
+                <p class="content-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus magnam earum dolore neque pariatur recusandae natus provident accusamus. A sit tempore ducimus ullam dolorum! Libero ratione nihil itaque quasi.
+                </p>
+                <p class="content-3"><a href="#">Learn More <svg xmlns="http://www.w3.org/2000/svg" width="34" height="14" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: scaleY(-1);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);"><path d="m19 12-7-6v5H6v2h6v5z"></path></svg></a></p>
+            </div>
+
+            <div class="i1">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAzRJREFUaEPtmf2RTUEQxc9GgAyIYIkAESACRIAIEAEiQASIwIoAESACRED91IzqN3fmzUf3o17VdtWt+8feN9PndPfpntkTHbmdHLn/OgfwvyP4LyJwXdKN9FyVdLEA/UPSWXo+SPo0Q8qhAODoA0m3Kw73/APM0wSo9214DcD048R2d/POB88lPeotEhWBy5JeBjlufSYadySRZlWLAADjT3pMTfydOsBhauFrSiXe4QAoxjcBrL8zRTxVwCBajQBF+n6hQC2LLySR5012R6K2AsDr/GdJ9zpySXRPJVFbPOzJ7zapOgvA6/zr5HxJLk7eSrKLktWMurhSFvQMgEM4T59ABFh7xO5LemU/HAVASMn50Y1KZ1CWktkV9dpEcBQAzrdC22PuZ8rjrOWQQc+A/VnbEDEC4KGkZ7M7me/LsHvI2ChnDwDF9dEhl98S+xkP6gP7HtvxuQfAy5Zln9T54iAjgx4GQM4DwGOXjOzRtJhQvTYMwMs+jceq1vcA9ss1m6MEG5P7HmOmz52T9AGA14ZlNCLcFkBEOgKe8wG+/bVWEVNsKJDHbAETCRqX166VM1QNQET64OhNcyyMAFBK8h8yagAiNmNtq0CcrDjce8ym5N4UepsmQ89mjA/29iECAJPo5uxQiwDqszq0ZdDlzPLLw4ak1hheTSHvZvhqCzhCgarst2rAC6BsNszvdx0RaLJ/KABWfZBiJHnVylF8s06tBjwRKNnyKhp3QohK02oAVhUD5zk75IOLN/e5tWC9vVYDsJKzpUYjoajZajffDG0tFDUAM4cOuiMs2TB7z884T/Sa14kWTA1Ab3JkA9KMSJU3aV7nKVp60PBlV2uYY+LLC7EYjuZ7/FY0OaRzXCzv/3tpnP8OMawx7HxLRkc3zN/l/wWQeqs2lTa9FBpxAqcZzmBs9bol7zOkNjNFbL8lHeiivHGUt3dOyuvXBGCEvJ1vercSOEw9eEaBmlOwTpMbUprZRlb7HqlkwwvTFO3+gGbHOlOFGgGANYgGQHhmgFCgSC6Pm/ESTC+F9kkmNZHrgTegOAdgyC4P/SKM7ZozqwCcmRT383MAcVyurXT0EfgNVwmjMbslQgIAAAAASUVORK5CYII="/>
+            </div>
+            <div class="c1">
+                <p class="content-1">Manage Your Account</p>
+                <p class="content-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus magnam earum dolore neque pariatur recusandae natus provident accusamus. A sit tempore ducimus ullam dolorum! Libero ratione nihil itaque quasi.
+                </p>
+                <p class="content-3"><a href="#">Learn More <svg xmlns="http://www.w3.org/2000/svg" width="34" height="14" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: scaleY(-1);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);"><path d="m19 12-7-6v5H6v2h6v5z"></path></svg></a></p>
+            </div>
+
+            <div class="i1">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAqtJREFUaEPtmYFRFTEQhn8qACsQKxArQCuADtQKhAqUCtQKlAqUCtQKgAqEDqACnM/JzcS4uWTzknvvzbAzNzBcbvP/+282m7CjLbedLcevRwLrVnAbFNiXdJML1KYTeCPpi6S3kr5aJDaZwAR+wm2SWDcB0uMuPHGAU/DTu2dpOq2DAKA/SjqQxO8YJL5LOpP0MqRNmjEboQCRBfyes3ptxBpgMULAa1nwOFoqhYaAX4IAOQ548rrFnhgL/B8/vRQA6NPIMwuU57gh32OAp5I+zTFvJQDgo5DTAB1lv0rqeQlQPd5LOhmFOPHblcA7SR9WTIkW3rNBrlGAqP8IOd0CYJVvLsI6yvooEagFj9RXklCpp83uAaUyWgL/OXSIAJ/soSP667CAaTOaFCDfWbCp3Ybq89N414vAfUjZ7DlgmjuXQkT/t7Fgz0MFSqNyGCacrdmV6gCejS9W1q2AFX0iT82PwaMQY3vaK0mWuuYclgK56MeOIUKL0HsTY1259hiLANv/t4Ru6vhyAHhL4aKyFgErfV5EOZlb3MXJCgPc0c+VUU5G9DmxxUR7VZqUD6cx93qyFKD6TEc9Jon7EaoDu/IIcy3euTKaRjiWlgXGkXCEDSMwAqzlsxsBNpDnS6GO5ulGgE2EnXVpKx4fLUC1ZXQ0meLBJQfAIsDuyka1pDWV0Nw+wN/pAuND+mgy/10Z1k6Y60Zzd5O1fj3j6HBbLrz+zjF3IltKhebolwhYTZ0nsjVjm/qf2HHpTDxy5606MpaiUCLA9/xn5HXJkfN9F/ClFIox9VSiG3gPAcbSiaLGKuWVnKdlnr1p8KhZk0KpP0oeIDxEKJV8U7xl8ID3KpD6RhEq1XQTvRsGcKtAQ0hPxU+e7sAnMC0KeIM0dPwjgaHhrXC+9Qr8AS79eTEFD/H2AAAAAElFTkSuQmCC"/>
+            </div>
+            <div class="c1">
+                <p class="content-1">Manage Organizations, teams and projects</p>
+                <p class="content-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus magnam earum dolore neque pariatur recusandae natus provident accusamus. A sit tempore ducimus ullam dolorum! Libero ratione nihil itaque quasi.
+                </p>
+                <p class="content-3"><a href="#">Learn More <svg xmlns="http://www.w3.org/2000/svg" width="34" height="14" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: scaleY(-1);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);"><path d="m19 12-7-6v5H6v2h6v5z"></path></svg></a></p>
+            </div>
+
+            <div class="i1">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA1xJREFUaEPtmY2xTEEQhc+LABEgAkSACBABIkAEiAARIAJEgAgQASJABNSnZtTsbM/c7r53qVWvq7Zqq3Z++vTP6e7ZEx25nBy5/joF8K89uKUHLki6IemapLPlc7kA/Cjpe/m8k/RG0pctwK8FgKL3JN2UVJX16gWo15KeFWDefTvrsgCq4veLpVOXl0145mkWSAbAHUlPNlC8Bw2Qu8UrboNEATyU9Mh9em4h5z/2bvUCIGSwOtb/G/JC0gNPbngBPE8o/7VhGhjqfBA5IAipqXgA4FJCJyIvDcAodDtySAmlacguASBksH5EsDwWtwTuj3ri1iyxZwCI+88JtnlfipkFgCJ2NWKNkgcXR/kwA5AJHXTbGgBnwkpmKI0AZK3PZYQJFrMEj47Ca+YYaoTphRGArPWrEhaDZJisBWV6YQTgg7O3gatJ9EuG+fBEbdiwumX5T5IAS41ZEnqnK/0iCwAX4eoloaOkiUPYw/cRmPasqjSNXAXIdzrZJSGMdrpYCwANmsciFBms10sFQx61Qhy3Sre/eekaj9P4/RELgJfqrkti7RbCDPHWcVDr9d/L1wBgP+7EC1Te6ICCp+os4WWmPYq2AHgTuDcYSQaY2bRVpzZCJjoAcd9eIlsAfjpcOVtyiEI2DPv/EgBusnjd65hDegAK3gm9tUlsgWJIh4otgQJJ3Ky4kthLoyMlqJZ40RKsB0lkxUWj3kJmKTGbBer6zExQ97oKmbeVsAD0DVdtNajAVdaEkauVqHybSeT+gtpTte111kB7CYyiW7bT/QVY/1Uxe992ZJgu1E7TiBGrZwLZ1sdnO8T3Q340z36UjpeGcEe2HCn78PnWzNNcfK65ORpG4ZGSuyJe6OnNao/71wUvXQ+tP8uBaqw2jmfR1FvIGlB6kN6xNf2sUhX2XoRFAUKCEj6WEEYUMx7KmAGWZBg6dePSw1ZdF3lVI/lnD1ve3t963dsD7AVAPlCAok+DSxYe/Y7yMNUe60RYyDrcG05Zxdm3GDbt4V4PtHtgGLwRqREeQLANZ7dtx+K+DIBKsbiYz1ogKI5B+CyGzNoQ6veTG4CAbqO9E60H1k4pHmWhRVc2j1vt36wVFMq2f7OO3oc89+ysyYZQ+KJDbTgFcCjLes89eg/8AsAgujEOAOXkAAAAAElFTkSuQmCC"/>
+            </div>
+            <div class="c1">
+                <p class="content-1">Manage Billing</p>
+                <p class="content-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus magnam earum dolore neque pariatur recusandae natus provident accusamus. A sit tempore ducimus ullam dolorum! Libero ratione nihil itaque quasi.
+                </p>
+                <p class="content-3"><a href="#">Learn More <svg xmlns="http://www.w3.org/2000/svg" width="34" height="14" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: scaleY(-1);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);"><path d="m19 12-7-6v5H6v2h6v5z"></path></svg></a></p>
+            </div>
+
+            <div class="i1">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAPFJREFUaEPtWdsNwkAMc4eg+zEFMzAF+5UhQEgghHRAfG5SDrnfcRPbyT3aCYM/0+D1wwS2dpBxYA/gCGD3pegzgAOAUwU5hsASKP5R843E/GsELmRBjDjkq5/hTBIT6Jb5A9AOrCROtzl2gHAgZR+pdCBlH6kkkLIMmwAxA3agJZZbyC30XoFQd4SC7jnUIVTxTaom4BnwDMRP4uoQqngPsaqgircDqoIq3g6oCqp4O6BeylW87ID6WUTFywTie3ZhJHOcLiwrnsoE4lrlRLYcYNfrnMqC9wQTqJYfeP23/ZcObCBqf0ovo/3arYMc3oEreSxIMTd5eNcAAAAASUVORK5CYII="/>
+            </div>
+            <div class="c1">
+                <p class="content-1">Authenticate to Abstract</p>
+                <p class="content-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus magnam earum dolore neque pariatur recusandae natus provident accusamus. A sit tempore ducimus ullam dolorum! Libero ratione nihil itaque quasi.
+                </p>
+                <p class="content-3"><a href="#">Learn More <svg xmlns="http://www.w3.org/2000/svg" width="34" height="14" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: scaleY(-1);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);"><path d="m19 12-7-6v5H6v2h6v5z"></path></svg></a></p>
+            </div>
+
+            <div class="i1">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAsNJREFUaEPtmOFxEzEQhV8qIFQAqQCoADoAKkioAKgAqACoADoAOiAVJKkgoYIkFYT5ZnQZeU/SSrZkxzO3fzyJfdJ7b9+u9nSgPY+DPcevhcCuM9gzA88lvZbE59PwGfM7l3Ql6a+kU0n8vXFsSgCg7yW9CaBbAEHmt6TvgVjLs/e/XZfAoaRPkj6stev8oW+Svki6aV1vHQKo/UMSJHoG4N+FrFSv20rgq6P6n+Bx/A2gyefUBYT5fBVqJQeSbHysZVBLgM1RHfVt/JPEpj8bLMB62O9E0pPEmqwFCddStQR+ZcDj28+1amV+x/PUkw1IYKli1BBAXTpNHKhONrq0wmArANts0KGKjcIjAEjUj+MibOim11PPfI+tOCOemf+/LRV2iQALXppucxv6fW/wE2bOFbL6KCLBXke5eigRIKXHRo0XHW2TSxCd6sx8mbVSjgBKoH4cPQq21lWpwiYLnN4rkSNgC5eihdQ2A7BxUScFzBFA/RgwPRlS2wybBQiRBTcD1oOjCzcnCk0E0HFBz2owlQHLnPEgdQJvIxu01ZfRRjMnpAgw4jLXT7HN4rWiuGKmCNDCsNEUnIT0Zgp51gUGpYH6o4DBEdceOLDRfaQI3BVAuUd7B0Kp0SWLuZUAp+LjDiBLS1w77xormFsJsLE3P23Kr+SA2f4LgU3lTjy/ZKBJgSUDcwWaBFyKeLFQm4WYjFcu1GqGObvFLg+y2WScAsMAxRgbz+ETCW4k4kFvgIOUK2LU51Zv5Sqn9E7MUMUDExGmUSZTxu2RYQkAHEHZu/qdeCTA0tqpy4SiZUf7uVUIe5HmWnYEgaaDKGJId+FlKr5McN8/HgIBAHOdSM3Zq5vkXZD3Rtaadvt7LwO167vqj3o56UHA9f6kwi4s5GWgSvmHRgDF6fXUQdPNx4gMeAp3/X4h0FXONRbb+wz8BwxkjzF4pOOkAAAAAElFTkSuQmCC"/>
+            </div>
+            <div class="c1">
+                <p class="content-1">Abstract Support</p>
+                <p class="content-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus magnam earum dolore neque pariatur recusandae natus provident accusamus. A sit tempore ducimus ullam dolorum! Libero ratione nihil itaque quasi.
+                </p>
+                <p class="content-3"><a href="#">Learn More <svg xmlns="http://www.w3.org/2000/svg" width="34" height="14" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: scaleY(-1);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);"><path d="m19 12-7-6v5H6v2h6v5z"></path></svg></a></p>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <p class="content-1">Abstract</p>
+                <p class="content-2">Branches</p>
+            </div>
+            <div>
+                <p class="content-1">Resources</p>
+                <p class="content-2">Blog</p>
+                <p class="content-2">Help Center</p>
+                <p class="content-2">Release Notes</p>
+                <p class="content-2">Status</p>
+            </div>
+            <div>
+                <p class="content-1">Community</p>
+                <p class="content-2">Twitter</p>
+                <p class="content-2">LinkedIn</p>
+                <p class="content-2">Facebook</p>
+                <p class="content-2">Dribbble</p>
+                <p class="content-2">Podcast</p>
+            </div>
+            <div>
+                <p class="content-1">Company</p>
+                <p class="content-2">About Us</p>
+                <p class="content-2">Careers</p>
+                <p class="content-2">Legal</p>
+                <br>
+                <p class="content-1" style="font-size: 1rem;">Contact Us</p>
+                <p class="content-2">info@abstract.com</p>
+            </div>
+            <div class="credits">
+                <img width="50vw" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAvlJREFUaEPtWe1VFEEQrIpAiUCJQIlAiUCMQIxAjECNQI1AiUCJQIhAiECIQIigfHVv1jc3O7s7uzd73N2jf3Kz3VX9Nd0DseXCLcePBwL3HcGHCOxcBCQ9BvABwHMALwPBcwCXAL6SvK5JeuUUkvQiALoC8AbARwAmkZPb8PspgGc+QPJiFUKTCEg6AvAZwNNVjEffOirvSf4cq28UgZAeP6LUGGtv6LxT7TVJR6pIxhL4VQj+DsAJAAOyuBa+AHhUgOqc5GHBucWRYgKSnNsuzlScw875RU4HOSDpov0vklzUv6M/uWbs6aaG4uOfSNreoIwh8CfJeXcUe3khklwP9vJll/HgBBM5abpRSEuDfRehvSa5P4i+NAIZ792QrFXAjQNcyE/6opgjNBiBAN6FGwM+JXlc4qHSM5K+hzbcfGJCLuilVEz19RKQ5OJz4aZyRtKttJpIcgt9lVF4SLJpBq2fOwmE3HTe5y6ldUSgAetC3+9qrX0Ecl3nLC7Aau5vN4I0Er7k3CBGRcBhi1vcUtepDT7WJ8lg4650QbKZq5ZM90VACchWb5+LRKbr3ZLcK4pAmHOaaXIujFP0ZuelVgQkpRfWFGNzfeNL8iBWniOQps5cYCbpJbmEOUcgLd5Jhmb6qFXMO0kgbWEzOXOS2lYrz0Wga2yeZLHyR60xO0fAQ9q3yoZrqfNwt7R2Zi8ySZ4/SranWsBK9NyRbM1lXQQ2sQ6yo0wXAc/+vtA2STyRtt6U+mahTboPJg1z6RJ+n9HoHCSHNrJN6EhvSXrdzErJTpzuquuMxODmN0jAaCV5sY7ffdZB4oqk07hXSgm4/zoSuaV7yMaU3726Hpc8MRYRaBBI8kOWH3XnlM79N2d0FIGQTg6rr/P4EaoGoRsAR0PvQKmh0QQCCafU3xqoIx17JSlThUAgUXVzSzetUudMisCuEEgfY0udljtX1DKrFHHUkfw26uVn1fvBxevn9tH/XjKWySm0irtrfvtAoKY3p+ja+gj8Axb8BkAYJEPaAAAAAElFTkSuQmCC"/>
+                <p class="content-2" style="margin-top: 2vh;">Copyright 2022 <br> Abstract Studio Design, Inc. <br> All rights reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>
