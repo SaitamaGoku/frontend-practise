@@ -12,7 +12,7 @@ The Abstract Help website.
 
 ## Screenshots
 
-![App Screenshot](https://github.com/SaitamaGoku/OdinProject-Flex/blob/main/saitamagoku.github.io_OdinProject-Flex_.png?raw=true)
+![App Screenshot](https://github.com/SaitamaGoku/frontend-practise/blob/pranav-n/Pranav_Nampally/127.0.0.1_3000_FrontendPractice_Abstract-Help-Page_.png?raw=true)
 
 
 ## Tech Stack
